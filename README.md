@@ -146,12 +146,16 @@ Una estructura inicial puede organizarse de la siguiente manera:
 ConstruCost/
 │
 ├── css/
-│   ├── login.css
+│   ├── inicio.css
+│   ├── registro.css
 │   ├── dashboard.css
-│   └── ...
+│   └── apu.css
 │
 ├── vistas/
-│   └── ...
+│   ├── inicio.html
+│   ├── registro.html
+│   ├── dashboard.html
+│   └── apu.html
 │
 └── README.md
 ```
