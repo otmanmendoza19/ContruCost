@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ConstruCost - Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <!-- =========================
+             BARRA LATERAL
+        ========================== -->
+
+      <aside class="sidebar">
+        <!-- Logo -->
+
+        <div class="logo">
+          <i data-lucide="hard-hat"></i>
+
+          <h1>ConstruCost</h1>
+        </div>
+
+        <!-- Navegación -->
+
+        <nav>
+          <a href="#" class="activo">
+            <i data-lucide="layout-dashboard"></i>
+
+            <span>Inicio</span>
+          </a>
+
+          <a href="#">
+            <i data-lucide="calculator"></i>
+
+            <span>APU</span>
+          </a>
+
+          <a href="#">
+            <i data-lucide="brick-wall"></i>
+
+            <span>Materiales</span>
+          </a>
+
+          <a href="#">
+            <i data-lucide="users"></i>
+
+            <span>Mano de obra</span>
+          </a>
+
+          <a href="#">
+            <i data-lucide="construction"></i>
+
+            <span>Equipos y maquinaria</span>
+          </a>
+
+          <a href="#">
+            <i data-lucide="building-2"></i>
+
+            <span>Proveedores</span>
+          </a>
+
+          <a href="#">
+            <i data-lucide="file-text"></i>
+
+            <span>Reportes</span>
+          </a>
+        </nav>
+
+        <!-- Cerrar sesión -->
+
+        <a href="inicio.html" class="cerrar-sesion">
+          <i data-lucide="log-out"></i>
+
+          <span>Cerrar sesión</span>
+        </a>
+      </aside>
+
+      <!-- =========================
+             CONTENIDO PRINCIPAL
+        ========================== -->
+
+      <main class="contenido">
+        <!-- Encabezado -->
+
+        <header class="encabezado">
+          <div>
+            <p class="ruta">Inicio</p>
+
+            <h2>Dashboard</h2>
+          </div>
+
+          <div class="usuario">
+            <div class="avatar">
+              <span>OM</span>
+            </div>
+
+            <div class="usuario-info">
+              <strong>Otman Mendoza</strong>
+
+              <span>Administrador</span>
+            </div>
+
+            <i data-lucide="chevron-down"></i>
+          </div>
+        </header>
+
+        <!-- =========================
+                 BIENVENIDA
+            ========================== -->
+
+        <section class="bienvenida">
+          <div>
+            <h3>Bienvenido, Otman</h3>
+
+            <p>
+              Administra tus Análisis de Precios Unitarios y recursos de
+              construcción.
+            </p>
+          </div>
+
+          <a href="#" class="boton-principal">
+            <i data-lucide="plus"></i>
+
+            Nuevo APU
+          </a>
+        </section>
+
+        <!-- =========================
+                 TARJETAS DE RESUMEN
+            ========================== -->
+
+        <section class="resumen">
+          <article class="tarjeta">
+            <div class="icono">
+              <i data-lucide="calculator"></i>
+            </div>
+
+            <div>
+              <p>APU registrados</p>
+
+              <strong>12</strong>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="icono">
+              <i data-lucide="brick-wall"></i>
+            </div>
+
+            <div>
+              <p>Materiales</p>
+
+              <strong>28</strong>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="icono">
+              <i data-lucide="users"></i>
+            </div>
+
+            <div>
+              <p>Proveedores</p>
+
+              <strong>10</strong>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="icono">
+              <i data-lucide="construction"></i>
+            </div>
+
+            <div>
+              <p>Equipos</p>
+
+              <strong>6</strong>
+            </div>
+          </article>
+        </section>
+
+        <!-- =========================
+                 APU RECIENTES
+            ========================== -->
+
+        <section class="seccion-apu">
+          <div class="titulo-seccion">
+            <div>
+              <h3>APU recientes</h3>
+
+              <p>Últimos análisis registrados.</p>
+            </div>
+
+            <a href="#" class="ver-todos">
+              Ver todos
+
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="tabla-contenedor">
+            <table>
+              <thead>
+                <tr>
+                  <th>Código</th>
+
+                  <th>Actividad</th>
+
+                  <th>Unidad</th>
+
+                  <th>Costo directo</th>
+
+                  <th>Estado</th>
+
+                  <th></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>CON-001</strong>
+                  </td>
+
+                  <td>Concreto de 3000 PSI para zapata</td>
+                  ooooo
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

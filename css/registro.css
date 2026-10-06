@@ -1,0 +1,245 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fa;
+    color: #12304a;
+}
+
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.registro {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.registro-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.campo label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #ccd5df;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #1267a8;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+button {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #1267a8;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d568d;
+}
+
+
+/* =========================
+   ENLACE DE LOGIN
+========================= */
+
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #1267a8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.registro-info {
+    width: 50%;
+    background-color: #123b5d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    color: white;
+    text-align: center;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.logo span {
+    font-size: 3rem;
+}
+
+.logo h1 {
+    font-size: 3rem;
+}
+
+
+/* =========================
+   DESCRIPCIÓN
+========================= */
+
+.descripcion {
+    max-width: 400px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.beneficios {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.beneficio span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.beneficio p {
+    font-size: 1rem;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .registro {
+        flex-direction: column;
+    }
+
+    .registro-form {
+        width: 100%;
+        min-height: 65vh;
+        padding: 2rem;
+        order: 2;
+    }
+
+    .registro-info {
+        width: 100%;
+        min-height: 35vh;
+        padding: 2rem;
+        order: 1;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .logo span {
+        font-size: 2rem;
+    }
+
+    .descripcion {
+        font-size: 1rem;
+    }
+
+}

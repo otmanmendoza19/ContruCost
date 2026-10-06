@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ConstruCost - Registro</title>
+
+    <link rel="stylesheet" href="../css/registro.css" />
+  </head>
+
+  <body>
+    <main class="registro">
+      <!-- Lado izquierdo: formulario -->
+      <section class="registro-form">
+        <div class="form-container">
+          <h2>Crear una cuenta</h2>
+
+          <p class="subtitulo">
+            Regístrate para comenzar a utilizar ConstruCost.
+          </p>
+
+          <form action="dashboard.html">
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ingresa tu nombre"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="usuario">Usuario</label>
+
+              <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Crea tu usuario"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="Ingresa tu correo"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="password">Contraseña</label>
+
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Crea una contraseña"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="confirmar-password"> Confirmar contraseña </label>
+
+              <input
+                type="password"
+                id="confirmar-password"
+                name="confirmar-password"
+                placeholder="Repite tu contraseña"
+                required
+              />
+            </div>
+
+            <button type="submit">Crear cuenta</button>
+          </form>
+
+          <div class="login-link">
+            <span>¿Ya tienes una cuenta?</span>
+            <a href="inicio.html">Inicia sesión</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lado derecho: información -->
+      <section class="registro-info">
+        <div class="logo">
+          <span>🏗️</span>
+
+          <h1>ConstruCost</h1>
+        </div>
+
+        <p class="descripcion">
+          Una herramienta web para facilitar la elaboración y gestión de
+          Análisis de Precios Unitarios.
+        </p>
+
+        <div class="beneficios">
+          <div class="beneficio">
+            <span>✓</span>
+            <p>Gestiona tus Análisis de Precios Unitarios.</p>
+          </div>
+
+          <div class="beneficio">
+            <span>✓</span>
+            <p>Organiza tus proyectos de construcción.</p>
+          </div>
+
+          <div class="beneficio">
+            <span>✓</span>
+            <p>Administra materiales, proveedores y costos.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

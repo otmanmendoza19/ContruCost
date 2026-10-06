@@ -1,0 +1,232 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fa;
+    color: #12304a;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.login {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.login-info {
+    width: 50%;
+    background-color: #123b5d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3rem;
+    color: white;
+    text-align: center;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.logo span {
+    font-size: 3rem;
+}
+
+.logo h1 {
+    font-size: 3rem;
+}
+
+
+/* Descripción */
+
+.descripcion {
+    max-width: 400px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.login-form {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    background-color: white;
+}
+
+
+.form-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+
+/* Títulos */
+
+.form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.3rem;
+}
+
+.campo label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 0.9rem;
+
+    border: 1px solid #ccd5df;
+    border-radius: 0.4rem;
+
+    font-size: 1rem;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #1267a8;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+button {
+    width: 100%;
+    padding: 0.9rem;
+
+    border: none;
+    border-radius: 0.4rem;
+
+    background-color: #1267a8;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d568d;
+}
+
+
+/* =========================
+   RECUPERAR CONTRASEÑA
+========================= */
+
+.recuperar {
+    display: block;
+
+    margin-top: 1.2rem;
+
+    text-align: center;
+
+    color: #1267a8;
+    text-decoration: none;
+}
+
+.recuperar:hover {
+    text-decoration: underline;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.register-link a {
+    color: #1267a8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .login {
+        flex-direction: column;
+    }
+
+    .login-info {
+        width: 100%;
+        min-height: 35vh;
+        padding: 2rem;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .logo span {
+        font-size: 2rem;
+    }
+
+    .descripcion {
+        font-size: 1rem;
+    }
+
+    .login-form {
+        width: 100%;
+        min-height: 65vh;
+        padding: 2rem;
+    }
+}

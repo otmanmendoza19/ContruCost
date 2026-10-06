@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ConstruCost - Inicio de sesión</title>
+
+    <link rel="stylesheet" href="../css/inicio.css" />
+  </head>
+
+  <body>
+    <main class="login">
+      <!-- Lado izquierdo -->
+      <section class="login-info">
+        <div class="logo">
+          <span>🏗️</span>
+          <h1>ConstruCost</h1>
+        </div>
+
+        <p class="descripcion">
+          Aplicación web para la elaboración y gestión de Análisis de Precios
+          Unitarios.
+        </p>
+      </section>
+
+      <!-- Lado derecho -->
+      <section class="login-form">
+        <div class="form-container">
+          <h2>Iniciar sesión</h2>
+
+          <p class="subtitulo">Accede a tu cuenta para continuar.</p>
+
+          <form action="dashboard.html">
+            <div class="campo">
+              <label for="usuario">Usuario</label>
+              <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Ingresa tu usuario"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="password">Contraseña</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Ingresa tu contraseña"
+              />
+            </div>
+
+            <button type="submit">Ingresar</button>
+          </form>
+
+          <a href="#" class="recuperar"> ¿Olvidaste tu contraseña? </a>
+
+          <div class="register-link">
+            <span>¿No tienes una cuenta?</span>
+            <a href="registro.html">Regístrate</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
